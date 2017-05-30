@@ -9,6 +9,7 @@ const bodyParser=require('body-parser');
 const cookieParser=require('cookie-parser');
 const configDB = require('./config/database.js');
 const router=require('./router');
+const http=require('http');
 
 const app=express();
 
@@ -25,6 +26,6 @@ router(app);
 mongoose.connect(configDB.url); // connect to our database
 
 
-
-app.listen(port);
+const server=http.createServer(app);
+server.listen(port);
 console.log('The party is on port ' + port);

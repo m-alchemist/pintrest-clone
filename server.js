@@ -11,7 +11,7 @@ const configDB = require('./config/database.js');
 const router=require('./router');
 const http=require('http');
 
-const app=express();
+const app=express.createServer();
 
 
 app.use(cookieParser()); // read cookies (needed for auth)
@@ -25,7 +25,5 @@ router(app);
 // configuration ===============================================================
 mongoose.connect(configDB.url); // connect to our database
 
-
-const server=http.createServer(app);
-server.listen(port);
+app.listen(port);
 console.log('The party is on port ' + port);

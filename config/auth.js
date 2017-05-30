@@ -5,7 +5,7 @@ module.exports = {
 	'twitterAuth' : {
 		'consumerKey' 		: 'DbKDLgZmQ9LoVkWmNbYUUPhqm',
 		'consumerSecret' 	: 'Afvjxo8Qmf8CVg6MGBNmddRr950dbpOfhdqwiXFevc3lwNQ2L1',
-		'callbackURL' 		: 'https://pintrest-clone-malchemist.herokuapp.com/auth/twitter/callback'
+		'callbackURL' 		: 'http://127.0.0.1:8080/auth/twitter/callback'
 
 	}
 };

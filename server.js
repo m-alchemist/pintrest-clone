@@ -11,7 +11,7 @@ const configDB = require('./config/database.js');
 const router=require('./router');
 const http=require('http');
 
-const app=express.createServer();
+const app=express();
 
 
 app.use(cookieParser()); // read cookies (needed for auth)

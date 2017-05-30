@@ -1,7 +1,7 @@
 import {AUTH_USER,UNAUTH_USER,FETCH_PUBLIC_IMAGES,FETCH_USER,FETCH_USER_WALL} from './types';
 import {browserHistory} from 'react-router';
 import axios from 'axios';
-const ROOT_URL='https://pintrest-clone-malchemist.herokuapp.com/'
+const ROOT_URL='http://pintrest-clone-malchemist.herokuapp.com/'
 export function checkForAuthentication(){
   return function(dispatch){
       axios.get(`${ROOT_URL}authentication`)

@@ -22,7 +22,7 @@ class Header extends Component {
         </li>
 
     <li className="nav-item" >
-      <a className='nav-link' href='http://127.0.0.1:8080/logout'> <p> Sign out  </p>  </a>
+      <a className='nav-link' href='https://pintrest-clone-malchemist.herokuapp.com/logout'> <p> Sign out  </p>  </a>
         </li>
 
 
@@ -34,7 +34,7 @@ class Header extends Component {
     }
     else{
      return( <li className="nav-item text-xs-right" key={1}>
-        <a href='http://127.0.0.1:8080/login' className=' nav-link' >
+        <a href='https://pintrest-clone-malchemist.herokuapp.com/login' className=' nav-link' >
         <button className='button_twitter' > <div className='twitter-bird'><i className="fa fa-twitter text-primary" aria-hidden="true"></i> </div>Sign In With Twitter </button>
         </a>
       </li>)

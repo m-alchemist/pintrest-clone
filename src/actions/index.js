@@ -1,7 +1,7 @@
 import {AUTH_USER,UNAUTH_USER,FETCH_PUBLIC_IMAGES,FETCH_USER,FETCH_USER_WALL} from './types';
 import {browserHistory} from 'react-router';
 import axios from 'axios';
-const ROOT_URL='http://127.0.0.1:8080/'
+const ROOT_URL='https://pintrest-clone-malchemist.herokuapp.com/'
 export function checkForAuthentication(){
   return function(dispatch){
       axios.get(`${ROOT_URL}authentication`)
@@ -86,7 +86,7 @@ export function fetchUserData(){
   }
 }
 export function fetchUserWall(body,callback){
-  
+
   return function(dispatch){
     axios.post(`${ROOT_URL}userwall`,body)
     .then((response)=>{

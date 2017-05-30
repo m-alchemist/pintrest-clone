@@ -1,0 +1,5 @@
+export const AUTH_USER='AUTH_USER';
+export const UNAUTH_USER='UNAUTH_USER';
+export const FETCH_PUBLIC_IMAGES='FETCH_PUBLIC_IMAGES';
+export const FETCH_USER='FETCH_USER';
+export const FETCH_USER_WALL='FETCH_USER_WALL';

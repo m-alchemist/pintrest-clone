@@ -53,7 +53,7 @@ module.exports = function(passport) {
 
                 // if the user is found then log them in
                 if (user) {
-
+                      console.log('YES!!')
                     return done(null, user); // user found, return that user
                 } else {
                     // if there is no user, create them

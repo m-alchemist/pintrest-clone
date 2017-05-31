@@ -39,7 +39,7 @@ class MyImages extends Component{
   getUserWall(image){
     var body={userId:image.user._id};
     this.props.fetchUserWall(body,()=>{
-      browserHistory.push(`/user/${image.user._id}`)
+      browserHistory.push(`/user/${this.props.userData._id}`)
     })
   }
   renderHeart(image){

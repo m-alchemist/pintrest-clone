@@ -40,6 +40,16 @@ class Header extends Component {
       </li>)
     }
   }
+  renderDropdown(){
+    if(this.props.authenticated){
+      return(  <li className="dropdown">
+           <a href="javascript:void(0)" className="dropbtn">+ Image</a>
+           <div className="dropdown-content">
+              <AddImage />
+           </div>
+        </li>)
+    }
+  }
 
   render(){
     return (
@@ -48,13 +58,9 @@ class Header extends Component {
         <Link to='/' className=' navbar-brand' ><i className="fa fa-pinterest pintrest-icon fa-2x text-xs-center" aria-hidden="true"></i>
     </Link>
         </div>
+        {this.renderDropdown()}
 
-                <li className="dropdown">
-                   <a href="javascript:void(0)" className="dropbtn">+ Image</a>
-                   <div className="dropdown-content">
-                      <AddImage />
-                   </div>
-                </li>
+
 
       <ul className="nav navbar-nav nav-text">
 
@@ -65,6 +71,7 @@ class Header extends Component {
     )
   }
 }
+
 
 function mapStateToProps(state){
 

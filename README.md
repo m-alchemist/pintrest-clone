@@ -1,17 +1,25 @@
-# Pintrest Clone
+# ReduxSimpleStarter
 
-The following app is a pintrest clone created for an FCC project. It utilizes react-redux and mongoDB. Below are the requirements for the project:
+Interested in learning [Redux](https://www.udemy.com/react-redux/)?
 
-User Story: As an unauthenticated user, I can login with Twitter.
+### Getting Started
 
-User Story: As an authenticated user, I can link to images.
+There are two methods for getting started with this repo.
 
-User Story: As an authenticated user, I can delete images that I've linked to.
+#### Familiar with Git?
+Checkout this repo, install dependencies, then start the gulp process with the following:
 
-User Story: As an authenticated user, I can see a Pinterest-style wall of all the images I've linked to.
+```
+> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
+> cd ReduxSimpleStarter
+> npm install
+> npm start
+```
 
-User Story: As an unauthenticated user, I can browse other users' walls of images.
+#### Not Familiar with Git?
+Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
 
-User Story: As an authenticated user, if I upload an image that is broken, it will be replaced by a placeholder image. (can use jQuery broken image detection)
-
-Live app link: https://pintrest-clone-malchemist.herokuapp.com
+```
+> npm install
+> npm start
+```
